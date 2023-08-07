@@ -1,0 +1,61 @@
+:root {
+    --bg-theme: #160628;
+    --bg-toggle-keypad: #1d0934
+    --bg-del-reset-key: hsl(268, 47%, 21%);
+    --key-shadow-del-reset: #871c9c;
+    --bg-keys: #58077d
+    --key-shadow-keys: hsl(285, 91%, 52%);
+    --bg-result-toggle-key:  #00e0d1;
+    --key-shadow-result: #6cf9f2;
+    --text-color: #ffe53d;
+    --text-del-result-color: #ffffff;
+    --text-result-color: #1b2428;
+}
+
+body {
+    background-color: var(--bg-theme);
+}
+
+label, .calculator__header-theme {
+    color: var(--text-color);
+}
+
+.calculator__header > .calculator__header-title {
+    color: var(--text-color);
+}
+
+.calculator__input {
+    background-color: var(--bg-toggle-keypad);
+}
+
+input:checked {
+    background-color: var(--bg-result-toggle-key);
+}
+
+.calculator__user-input {
+    background-color: var(--bg-toggle-keypad);
+    color: var(--text-color);
+}
+
+.calculator__container {
+    background-color: var(--bg-toggle-keypad);
+}
+
+.calculator__container > button {
+    background-color: var(--bg-keys);
+    color: var(--text-color);
+    box-shadow: 0 5px var(--key-shadow-keys);
+}
+
+button:nth-child(17), button:nth-child(4) {
+    background-color: var(--bg-del-reset-key);
+    box-shadow: 0 5px var(--key-shadow-del-reset);
+    color: #ffffff;
+}
+
+button:nth-child(18) {
+    background-color: var(--bg-result-toggle-key);
+    box-shadow: 0 5px var(--key-shadow-result);
+    color: var(--text-result-color)
+}
+

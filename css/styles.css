@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    font-family: 'Spartan', sans-serif;  
+    font-size: 32px;
+}
+
+:root {
+    --bg-theme: #3a4764;
+    --bg-toggle-keypad: #232c43;
+    --bg-screen: #182034;
+    --bg-del-reset-key:  #637097;
+    --key-shadow-del-reset: #404e72;
+    --bg-keys: #eae3dc;
+    --key-shadow-keys:  #b4a597;
+    --bg-result-toggle-key: #d03f2f;
+    --key-shadow-result: #93261a; 
+    --text-color: #444b5a; 
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label, .calculator__header-theme {
+    font-size: 13px;
+    color: var(--bg-keys);
+    position: relative;
+    left: 70px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    align-items: center;
+}
+
+.calculator__header {
+    display: flex;
+    margin: 50px 0 10px;
+    position: relative;
+}
+
+.calculator__header > .calculator__header-title {
+    color: var(--bg-keys);
+    position: absolute;
+    left: -90px;
+    top: -15px;
+} 
+
+.header > .calculator__header-theme {
+    align-self: center;
+}
+
+.calculator__input {
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: var(--bg-toggle-keypad);
+    position: relative;
+    left: 90px;
+}
+  
+[id="theme1"], [id="theme2"], [id="theme3"] {
+    appearance: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    top: 7px;
+    transition: 0.5s;
+}
+  
+[id="theme1"] { 
+    left: 10px;
+}
+  
+[id="theme2"] {
+    left: 33px;
+}
+  
+[id="theme3"] {
+    left: 55px;
+}
+  
+input:checked {
+    background-color: var(--bg-result-toggle-key);
+}
+  
+label {
+    top: -40px;
+}
+  
+label[for="theme1"] {
+    left: 13px;
+}
+  
+label[for="theme2"] {
+    left: 20px;
+}
+  
+label[for="theme3"] {
+    left: 26px;
+}
+
+.calculator__user-input {
+    background-color: var(--bg-screen);
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+.calculator__user-input > .previous-operand {
+    font-size: 15px;
+}
+
+.calculator__container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    background-color: var(--bg-toggle-keypad);
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.calculator__container > button {
+    margin: 0 8px;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-keys);
+    color: var(--text-color);
+    box-shadow: 0 5px var(--key-shadow-keys);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.column-span {
+    grid-column: span 2;
+}
+
+button:nth-child(17), button:nth-child(4) {
+    background-color: var(--bg-del-reset-key);
+    box-shadow: 0 5px var(--key-shadow-del-reset);
+    color: var(--bg-keys);
+    font-size: 18px;
+    padding: 17px 0;
+}
+
+button:nth-child(18) {
+    background-color: var(--bg-result-toggle-key);
+    box-shadow: 0 5px var(--key-shadow-result);
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .calculator {
+        width: 350px;
+    }
+
+    .calculator__container {
+        grid-template-columns: repeat(4, 82px);
+        grid-template-rows: repeat(5, 65px);
+    }
+    
+    .calculator__container > button {
+        margin: 0 8px;
+        padding: 5px 0;
+    }
+
+    button:nth-child(17), button:nth-child(4) {
+        padding: 13px 0;
+    }    
+}
