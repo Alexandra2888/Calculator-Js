@@ -1,60 +1,60 @@
 :root {
-    --bg-theme: #e6e6e6;
-    --bg-toggle-keypad: #d1cccc;
-    --bg-screen: #1c214c;
-    --bg-del-reset-key: #377f86;
-    --key-shadow-del-reset: #1b5f65;
-    --bg-keys: #e5e4e1;
-    --key-shadow-keys: #a69d91;
-    --bg-result-toggle-key: #ca5502;
-    --key-shadow-result: #893901;
-    --text-color: #35352c;  
+  --bg-theme: hsl(268, 75%, 9%);
+  --bg-toggle-keypad: hsl(268, 71%, 12%);
+  --bg-del-reset-key: hsl(268, 47%, 21%);
+  --key-shadow-del-reset: hsl(290, 70%, 36%);
+  --bg-keys: hsl(281, 89%, 26%);
+  --key-shadow-keys: hsl(285, 91%, 52%);
+  --bg-result-toggle-key:  hsl(176, 100%, 44%);
+  --key-shadow-result: hsl(177, 92%, 70%);
+  --text-color: hsl(52, 100%, 62%);
+  --text-del-result-color: hsl(0, 0, 100%);
+  --text-result-color: hsl(198, 20%, 13%);
 }
 
 body {
-    background-color: var(--bg-theme);
+  background-color: var(--bg-theme);
 }
 
-label, .calculator__header-theme {
-    color: var(--text-color);
+label, h6 {
+  color: var(--text-color);
 }
 
-.calculator__header > .calculator__header-title {
-    color: var(--text-color);
+.header > h1 {
+  color: var(--text-color);
 }
 
-.calculator__input {
-    background-color: var(--bg-toggle-keypad);
+.input {
+  background-color: var(--bg-toggle-keypad);
 }
 
 input:checked {
-    background-color: var(--bg-result-toggle-key);
+  background-color: var(--bg-result-toggle-key);
 }
 
-.calculator__user-input {
-    background-color: var(--bg-screen);
-    color: var(--text-color);
+.user-input {
+  background-color: var(--bg-toggle-keypad);
+  color: var(--text-color);
 }
 
-.calculator__container {
-    background-color: var(--bg-toggle-keypad);
+.grid-container {
+  background-color: var(--bg-toggle-keypad);
 }
 
-.calculator__container > button {
-    background-color: var(--bg-keys);
-    color: var(--text-color);
-    box-shadow: 0 5px var(--key-shadow-keys);
+.grid-container > button {
+  background-color: var(--bg-keys);
+  color: var(--text-color);
+  box-shadow: 0 5px var(--key-shadow-keys);
 }
 
 button:nth-child(17), button:nth-child(4) {
-    background-color: var(--bg-del-reset-key);
-    box-shadow: 0 5px var(--key-shadow-del-reset);
-    color: var(--bg-keys);
+  background-color: var(--bg-del-reset-key);
+  box-shadow: 0 5px var(--key-shadow-del-reset);
+  color: white;
 }
 
 button:nth-child(18) {
-    background-color: var(--bg-result-toggle-key);
-    box-shadow: 0 5px var(--key-shadow-result);
-    color: white;
+  background-color: var(--bg-result-toggle-key);
+  box-shadow: 0 5px var(--key-shadow-result);
+  color: var(--text-result-color)
 }
-
