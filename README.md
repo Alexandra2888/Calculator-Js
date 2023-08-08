@@ -27,6 +27,10 @@ Users should be able to:
 - Mobile-first workflow
 - JS 
 
+## Screenshots
+
+![image](https://github.com/Alexandra2888/Calculator-Js/assets/76844097/e7e6e412-fe11-4f6b-a630-6b034450df9a)
+
 
 
 ## Author
