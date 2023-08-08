@@ -31,9 +31,10 @@ Users should be able to:
 
 ![image](https://github.com/Alexandra2888/Calculator-Js/assets/76844097/e7e6e412-fe11-4f6b-a630-6b034450df9a)
 
-![image](https://github.com/Alexandra2888/Calculator-Js/assets/76844097/1c5d4e85-0d4d-49e7-bcee-16b61516d3c1)
-
 ![image](https://github.com/Alexandra2888/Calculator-Js/assets/76844097/2ca7a4ea-a1fb-4075-8943-423a558c2dfe)
+
+![image](https://github.com/Alexandra2888/Calculator-Js/assets/76844097/4e0cd99f-0e16-42a7-9e26-70d791812a6e)
+
 
 
 
