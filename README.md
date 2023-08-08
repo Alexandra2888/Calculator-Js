@@ -41,6 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Provokeabi](https://www.frontendmentor.io/profile/Alexandra2888)
+- Frontend Mentor - [Alexandra2888](https://www.frontendmentor.io/profile/Alexandra2888)
 
 
